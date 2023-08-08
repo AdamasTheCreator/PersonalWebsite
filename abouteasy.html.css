@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EasyPronun</title>
+    <style>
+        body {
+            background-color: rgb(28, 31, 34);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 2em;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 75%;
+            display: flex;
+            gap: 1em;
+        }
+        .column:nth-child(odd) .text {
+            text-align: left;
+            flex: 1;
+        }
+        .column:nth-child(even) .text {
+            text-align: right;
+            flex: 1;
+        }
+        .column:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            margin: 0;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            width: 100%;
+            background-color: rgb(20, 23, 26);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        li {
+            margin-bottom: 10px; 
+        }
+        ul {
+            list-style-type: disc;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 75px;
+            width: 50.5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        a {
+        color: rgb(105, 105, 253);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>About EasyPronun</h1>
+    <h2>Descriptions</h2>
+    <div class="row">
+        <div class="column">
+            <div class="text" style="text-align: justify;">
+                <li>Introduction</li>
+                <p>EasyPronun represents a paradigm shift in the field of English language learning, offering non-native speakers a transformative learning experience. This research paper investigates the core features and functionality of EasyPronun, shedding light on how this application is revolutionizing the way individuals develop their English speaking skills.</p>
+                <li>Integration of Text-to-Speech and Pronunciation Database</li>
+                <p>EasyPronun harnesses the power of a cutting-edge text-to-speech tool and Google's extensive pronunciation database to create a seamless learning experience. Learners can input text, which is then converted into natural and accurate speech, accompanied by real-time pronunciation feedback. The application analyzes pronunciation patterns, offers corrective suggestions, and provides learners with opportunities for practice and improvement.</p>
+                <li>Enhanced Learning Efficiency</li>
+                <p>By combining the text-to-speech functionality and Google's pronunciation database, EasyPronun enhances learning efficiency. Learners receive instant feedback on their pronunciation, enabling them to identify and rectify errors promptly. The interactive nature of the application promotes active engagement and accelerates the learning process, resulting in quicker progress and improved speaking skills.</p>
+                <li>Personalized Learning Experience</li>
+                <p>EasyPronun caters to individual learning needs by offering a personalized learning experience. Learners can customize the application to focus on specific pronunciation difficulties or target particular language elements. The adaptive nature of EasyPronun ensures that learners receive tailored feedback and practice exercises, addressing their unique areas of improvement.</p>
+                <li>Unlocking True English Speaking Capabilities</li>
+                <p>EasyPronun empowers non-native speakers to unlock their true English speaking capabilities. By providing accurate pronunciation guidance and ample practice opportunities, the application instills confidence and proficiency. As learners refine their pronunciation skills with EasyPronun, they gain the ability to communicate more effectively and naturally in English.</p>
+                <li>Conclusion</li>
+                <p>EasyPronun represents a game-changing beta application that is reshaping the landscape of English language learning for non-native speakers. By flawlessly integrating a powerful text-to-speech tool with Google's extensive pronunciation database, EasyPronun offers learners a unique and efficient way to enhance their English speaking skills. With its personalized approach and focus on unlocking true capabilities, EasyPronun is poised to revolutionize how non-native speakers learn English.</p>
+            </div>
+        </div>
+    <div>
+    <h2>Coming Soon</h2>
+</body>
+<footer>
+    <div>
+        <a href="https://www.instagram.com/jjjjack.tr/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100006646455706" class="fa fa-facebook"></a>
+        <a href="tel:(470)-621-4459" class="fa fa-phone"></a>
+        <a href="mailto:jacktran14122004@gmail.com" class="fa fa-envelope"></a>
+    </div>
+</footer>
+</html>
