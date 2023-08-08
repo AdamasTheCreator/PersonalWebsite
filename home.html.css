@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my website</title>
+    <style>
+        body {
+            background-color: rgb(28, 31, 34);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            margin: 0;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            width: 100%;
+            background-color: rgb(20, 23, 26);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h4 {
+            font-size: 3em;
+            text-align: center;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        h3 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        h2 {
+            font-size: 1.5em;
+            text-align: left;
+            margin-top: 1em;
+        }
+        h5 {
+            font-size: 1.5em;
+            text-align: right;
+            margin-top: 1em;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 2em;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 75%;
+            display: flex;
+            gap: 1em;
+        }
+        .column:nth-child(odd) .text {
+            text-align: left;
+            flex: 1;
+        }
+        .column:nth-child(even) .text {
+            text-align: right;
+            flex: 1;
+        }
+        .column:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 75px;
+            width: 50.5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(28, 31, 34);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        li {
+            margin-bottom: 10px; 
+        }
+        ul {
+            list-style-type: disc;
+        }
+        a {
+        color: rgb(105, 105, 253);
+        }
+        a:hover {
+            opacity: 0.7;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <h1>Welcome to my website</h1>
+    <h4>Jack Innovation</h4>
+    <h3>About Me</h3>
+    <div class="row">
+        <div class="column">
+            <div class="text" style="text-align: justify;">
+                <p>Hello there! Thank you for stopping by my site! I'm Jack, utterly captivated by the enchanting world of computer science and its profound influence on our present era. I've created this website to keep you updated on my journey and achievements. Below, you'll find a brief overview of what ignited my passion for programming as well as overall projects:</p>
+                <li>Steve Jobs' Inspiration: I vividly recall the first time I watched "Steve Jobs - The Lost Interview". It sparked an epiphany - programming was the future I was destined for. I was utterly fascinated by the transformative power of programming in shaping the world we live in today.</li>
+                <li>Programming Languages: In terms of my current expertise, I've honed my skills in Python, C#, JavaScript, and C++ through numerous diverse coding projects of my own.</li>
+                <li>Networking and Collaboration: I strongly believe in the potential of computer science, especially in software engineering. I'm keen to connect with individuals who share similar interests. So, if you're eager to connect and collaborate, please don't hesitate to reach out.</li>
+                <p>In conclusion, coding should be more than just lines of text - it should be a thrilling and fulfilling journey. The ability to create something from scratch, to solve real-world problems, embodies the true essence of computer science!!!</p>
+            </div>
+        </div>
+    <div>
+    <h3>Projects</h3>
+
+    <div class="row">
+        <div class="column">
+            <div class="text">
+                <h2>Adamas Journey</h2>
+                <p>Jump right into Adamas Journey, an enthralling role-playing game that invites you to journey into the unknown depths, in pursuit of truth and personal growth. Navigate through dangerous areas, make your gear better, and discover hidden secrets. Prepare for an exciting adventure that will catch your interest and keep you wanting more!</p>
+                <p>For more information, <a href="{{ url_for('aboutadamas') }}">click here</a>.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="text">
+                <h5>EasyPronun</h5>
+                <p>Meet EasyPronun, a game-changing beta application that's transforming the way non-native speakers learn English. By flawlessly combining a powerful text-to-speech tool with Google's vast pronunciation database, EasyPronun enables learners to enhance their English speaking skills more easily and efficiently. Discover the benefits of EasyPronun and let it help you uncover your true English speaking capabilities.</p>
+                <p>For more information, <a href="{{ url_for('abouteasy') }}">click here</a>.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="text">
+                <h2>EffiBot</h2>
+                <p>Say hello to EffiBot, an entrepreneurship platform dedicated to promoting Fingerbot, a tiny yet mighty robot capable of manipulating a wide range of buttons and switches. With its convenient adhesive sticker, you can easily attach it to any surface, thus breathing new life into your vintage appliances. Fingerbot can effortlessly control devices like computers, TVs, floor robots, garage doors, wall switches, and more.</p>
+                <p>For more information, <a href="{{ url_for('abouteffi') }}">click here</a>.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <h3>Contact Me</h3>
+        <div>
+            <a href="https://www.instagram.com/jjjjack.tr/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100006646455706" class="fa fa-facebook"></a>
+            <a href="tel:(470)-621-4459" class="fa fa-phone"></a>
+            <a href="mailto:jacktran14122004@gmail.com" class="fa fa-envelope"></a>
+        </div>
+    </footer>
+</body>
+</html>
