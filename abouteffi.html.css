@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EffiBot</title>
+    <style>
+        body {
+            background-color: rgb(28, 31, 34);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            gap: 2em;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 75%;
+            display: flex;
+            gap: 1em;
+        }
+        .column:nth-child(odd) .text {
+            text-align: left;
+            flex: 1;
+        }
+        .column:nth-child(even) .text {
+            text-align: right;
+            flex: 1;
+        }
+        .column:not(:last-child) {
+            border-bottom: 1px solid white;
+        }
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            margin: 0;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            width: 100%;
+            background-color: rgb(20, 23, 26);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-top: .5em;
+            margin-bottom: .5em;
+        }
+        li {
+            margin-bottom: 10px; 
+        }
+        ul {
+            list-style-type: disc;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 75px;
+            width: 50.5px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        a {
+        color: rgb(105, 105, 253);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>About EffiBot</h1>
+    <h2>Descriptions</h2>
+    <div class="row">
+        <div class="column">
+            <div class="text" style="text-align: justify;">
+                <li>Introduction</li>
+                <p>EffiBot introduces Fingerbot, a groundbreaking robot that redefines smart device control. This research paper examines the core features and functionalities of Fingerbot and explores the transformative potential of this innovative device in enhancing the usability and control of various appliances.</p>
+                <li>The Versatile Device Manipulator</li>
+                <p>Fingerbot is a compact and versatile robot designed to interact with buttons and switches on a wide range of devices. Its small form factor and adhesive sticker allow easy attachment to any surface, providing effortless control over everyday objects. This section delves into the technical capabilities of Fingerbot, highlighting its compatibility with diverse devices such as computers, TVs, floor robots, garage doors, wall switches, and more.</p>
+                <li>Convenience and Adaptability</li>
+                <p>EffiBot empowers users by offering convenient control and adaptability through Fingerbot. With its simple setup process and user-friendly interface, Fingerbot enables individuals to effortlessly manage multiple devices from a centralized platform. Users can create customized routines, schedules, and automation sequences to optimize device control according to their preferences and needs.</p>
+                <li>Revitalizing Vintage Appliances</li>
+                <p>One of the unique aspects of Fingerbot is its ability to breathe new life into vintage appliances. By attaching Fingerbot to older devices that lack smart capabilities, users can conveniently control and automate their functionality. This section discusses how Fingerbot bridges the gap between traditional appliances and modern smart home ecosystems, extending the lifespan and usability of existing devices.</p>
+                <li>Future Implications and Opportunities</li>
+                <p>EffiBot's Fingerbot opens up a realm of possibilities in the world of smart device control. As more devices become compatible with Fingerbot, the potential for seamless integration and enhanced control expands. This section explores the future implications of Fingerbot and highlights the opportunities for further innovation in the realm of device manipulation and smart home automation.</p>
+                <li>Conclusion</li>
+                <p>EffiBot, through its dedication to promoting Fingerbot, introduces an innovative solution for smart device control. Fingerbot's versatility, convenience, and adaptability offer users a seamless means of controlling a wide range of devices. By revitalizing vintage appliances and facilitating centralized control, Fingerbot revolutionizes the functionality of everyday objects. The future implications and opportunities for Fingerbot further emphasize its potential to shape the future of smart home automation and device manipulation.</p>
+            </div>
+        </div>
+    <div>
+    <h2>Check it out!</h2>
+        <div style="text-align: center;">
+            <a href="https://effibot.com/">EffiBot.com</a>
+        </div>
+</body>
+<footer>
+    <div>
+        <a href="https://www.instagram.com/jjjjack.tr/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100006646455706" class="fa fa-facebook"></a>
+        <a href="tel:(470)-621-4459" class="fa fa-phone"></a>
+        <a href="mailto:jacktran14122004@gmail.com" class="fa fa-envelope"></a>
+    </div>
+</footer>
+</html>
